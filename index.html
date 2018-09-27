@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="small-device.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="menu">
+        <a href="#">ЧАРТЕРЫ</a>
+        <a href="#">ПОКУПКА/ПРОДАЖА</a>
+        <a href="#">МЕНЕДЖМЕНТ ВС</a>
+        <a href="#">АВИАЦИОННЫЙ КОНСАЛТИНГ</a>
+        <a href="#">УСЛУГИ</a>
+        <a href="#">О КОМПАНИИ</a>
+        <a href="#">КОНТАКТЫ</a>
+        <a href="#">EN</a>
+      </div>
+      <div class="menuCharter">
+        <div>
+          <a href="#">БИЗНЕС <br>ЧАРТЕРЫ</a>
+        </div>
+        <div class="navVerticalLine"></div>
+        <div>
+          <a href="#">ГРУППОВЫЕ<br> ЧАРТЕРЫ</a>
+        </div>
+        <div class="navVerticalLine"></div>
+        <div>
+          <a href="#">ГРУЗОВЫЕ<br> ЧАРТЕРЫ</a>
+        </div>
+        <div class="navVerticalLine"></div>
+        <div>
+          <a href="#">МЕДИЦИНСКИЕ<br> ЧАРТЕРЫ</a>
+        </div>
+        <div class="navVerticalLine"></div>
+        <div>
+          <a href="#">EMPTY <br>LEGS</a>
+        </div>
+        <div class="navVerticalLine"></div>
+        <div>
+          <a href="#">ВЕРТОЛЕТЫ</a>
+        </div>
+      </div>
+    </nav>
+    <section class="emptyLegsSection">
+      <div class="emptyLegs">РЕЙСЫ EMPTY LEGS</div>
+      <div class="aside">
+        <div>ОБРАТНЫЙ ЗВОНОК
+          <!-- <div class="asideHide">
+            <form action="">              
+              <input type="tel" id="tel" size="14">
+              <input type="submit" value="Ввод">              
+              <label for="tel">Введите номер</label>
+            </form>
+          </div> -->
+        </div>
+      </div>
+      <div class="cite">
+        <div class="citeLine"></div>
+        <p>Когда компания Company организует чартерный перелет в один конец, то<br>
+          зачастую самолет при возвращении на свою базу или при продолжении <br>
+          перелета в другое место летит пустым.Такие рейсы известны в нашем бизнесе<br>
+          как "Empty Legs".</p>
+      </div>
+
+      <div class="actual"><a href="#">АКТУАЛЬНЫЕ РЕЙСЫ</a><img src="assets/arrowRight.png" alt=""></div>
+
+      <div class="sectionNews">
+        <p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения
+          информации выберите мышкой <br>понравившийся Empty Leg или же подпишитесь на
+          информационную рассылку и получайте каждую неделю электронную почту
+          с<br> кратким обзором всех Empty Legs, появившихся за последние 7 дней.<br><br>
+        </p>
+
+        <p>Этот список, конечно, не является исчерпывающим, поэтому, если вы не находите
+          подходящего Empty Leg на этой странице,<br> свяжитесь с нашими специалистами напрямую
+          и передайте им информацию о ваших регулярных маршрутах. Мы свяжемся с<br> вами,
+          как только какой-либо из ваших маршрутов станет доступен.<br><br></p>
+
+        <p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения
+          информации выберите мышкой<br> понравившийся Empty Leg или же подпишитесь на
+          информационную рассылку и получайте каждую неделю электронную почту
+          с<br> кратким обзором всех Empty Legs, появившихся за последние 7 дней.<br></p><br>
+      </div>
+    </section>
+  </header>
+  <section class="description">
+    <div class="description1">
+      <div class="rotationNumber">
+        <img src="assets/01.png" alt="">
+        <div class="rotationNumberLine"></div>
+      </div>
+      <div class="descriptionH3"><span>БОЛЬШАЯ ЭКОНОМИЯ</span><br>
+        Ваша экономия до 75% от,<br> стоимости обычного<br> чартера</div>
+    </div>
+    <div class="description1">
+      <div class="rotationNumber">
+        <img src="assets/02.png" alt="">
+        <div class="rotationNumberLine"></div>
+      </div>
+      <div class="descriptionH3"><span>ШИРОКИЙ ВЫБОР</span><br>
+        Empty Legs - широкий<br>спектр частных<br> воздушных судов</div>
+    </div>
+    <div class="description1">
+      <div class="rotationNumber">
+        <img src="assets/03.png" alt="">
+        <div class="rotationNumberLine"></div>
+      </div>
+      <div class="descriptionH3"><span>АКТУАЛЬНАЯ ИНФОРМАЦИЯ</span><br>
+        Информация регулярно<br> обновляются на нашем<br> веб-сайте</div>
+    </div>
+    <div class="description1">
+      <div class="rotationNumber">
+        <img src="assets/04.png" alt="">
+        <div class="rotationNumberLine"></div>
+      </div>
+      <div class="descriptionH3"><span>ОПОВЕЩЕНИЕ КЛИЕНТОВ</span><br>
+        Наши специалисты известят вас,<br> как только появится ваш<br> маршрут</div>
+    </div>
+  </section>
+  <main>
+    <div class="labelTable">АКТУАЛЬНЫЕ РЕЙСЫ</div>
+    <div class="verticalLine"></div>
+    <div class="nameTable">РАСПИСАНИЕ</div>
+    <img src="assets/arrowBottom.png" alt="" id="arrow">
+    <table>
+      <tr>
+        <th>EMPTY LEGS</th>
+        <th>ДАТА ВЫЛЕТА</th>
+        <th>САМОЛЕТ</th>
+        <th>ЗАКАЗ</th>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro </td>
+        <td>28 февраля 2018 года</td>
+        <td>LearJet 45 XR</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>28 февраля 2018 года</td>
+        <td>LearJet 40</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro </td>
+        <td>28 февраля 2018 года</td>
+        <td>LearJet 60 XR</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>01 марта 2018 года</td>
+        <td>Global 5000</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro </td>
+        <td>02 марта 2018 года</td>
+        <td>Challenger 300</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>02 марта 2018 года</td>
+        <td>Challenger 850</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro </td>
+        <td>04 марта 2018 года</td>
+        <td>P.180 Avanti II</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>04 марта 2018 года</td>
+        <td>LearJet 45 XR</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro</td>
+        <td>05 марта 2018 года</td>
+        <td>LearJet 40</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>07 марта 2018 года</td>
+        <td>LearJet 60 XR</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro</td>
+        <td>07 марта 2018 года</td>
+        <td>Global 5000</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>07 марта 2018 года</td>
+        <td>Challenger 300</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Los Angelos - Teterboro </td>
+        <td>09 марта 2018 года</td>
+        <td>Challenger 850</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+      <tr>
+        <td>Boca Raton - West Chicago</td>
+        <td>10 марта 2018 года</td>
+        <td>P.180 Avanti II</td>
+        <td><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+      </tr>
+    </table>
+    <div class="addFlight"><a href="">ЕЩЕ РЕЙСЫ<img src="assets/arrowRightBlack.png" alt=""></a></div>
+  </main>
+  <footer>
+    <div class="footerName">СВЯЖИТЕСЬ С НАМИ</div>
+    <div class="verticalLine"></div>
+    <div class="allContacts">
+      <div>
+        <div>
+          <img src="assets/Forma 1.png" alt="">АДРЕС:
+        </div>
+        <p>Киев, 03115, Украина<br>
+          ул. Туполева, 18</p>
+      </div>
+      <div>
+        <div class="faxContact"> <img src="assets/tel.png" alt="">ТЕЛЕФОН:<br>
+          <p>+38 (044) 123-45-67</p>
+        </div>
+        <div class="faxContact"> <img src="assets/fax.png" alt="">ФАКС:<br>
+          <p>+38 (044) 123-45-67</p>
+        </div>
+      </div>
+      <div> <img src="assets/mail.png" alt="">E-MAIL<br>
+        <p> info@company.com</p>
+      </div>
+    </div>
+    <div class="footerDown"></div>
+    <div class="design">
+      <div>© 1998-2018</div>
+      <div>Design & Development by <img src="assets/apelsun.png" alt=""> </div>
+    </div>
+
+  </footer>
+  <div id="pop-up">
+    <div id="modal_form">
+      <span id="modal_close">X</span>
+      <div class="pop">ВЫ ВЫБРАЛИ РЕЙС:</div>
+      <div id="goal">       
+      </div><br>
+      <button id="btn">ПОДТВЕРДИТЬ</button>
+    </div>
+    <div id="overlay"></div>
+  </div>
+</body>
+
+</html>

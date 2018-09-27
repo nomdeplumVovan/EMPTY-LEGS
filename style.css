@@ -1,0 +1,531 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro-Bold';
+  src: url(fonts/pfdindisplaypro-bold.ttf);
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro';
+  src: url(fonts/ofont.ru_PF\ DinDisplay\ Pro.ttf);
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro reg';
+  src: url(fonts/pfdindisplaypro-reg.ttf);
+}
+
+@font-face {
+  font-family: 'PF DinDisplay Pro light';
+  src: url(fonts/pfdindisplaypro-light.ttf);
+}
+
+body {
+  font-family: 'PF DinDisplay Pro';
+  color: #555555;
+  width: 100%;
+}
+
+header {
+  background-image: url("assets/headerBg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin-bottom: 110px;
+  margin-left: 340px;
+}
+
+.menu {
+  font-size: 13px;
+  margin-top: 53px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #929292;
+  font-weight: 100;
+  margin-right: 30px;
+}
+
+.menu a:hover {
+  color: #a7d2db;
+}
+
+/* подраздел чартеров */
+.menuCharter {
+  max-width: 891px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.menuCharter a {
+  text-decoration: none;
+  font-family: 'PF DinDisplay Pro light';
+  color: #929292;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.menuCharter a:hover {
+  color: #a7d2db;
+}
+
+.navVerticalLine {
+  padding-top: 5px;
+  background-color: rgba(85, 85, 85, 0.2);
+  width: 1px;
+  height: 25px;
+}
+
+/*  про пустые места section*/
+.emptyLegsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyLegs {
+  font-family: 'PF DinDisplay Pro reg';
+  color: #555555;
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 108px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.cite {
+  padding-left: 30px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.cite p {
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #555555;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.citeLine {
+  background-color: #555555;
+  width: 71px;
+  height: 2px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+/* ссылка на актуальные рейсы */
+.actual {
+  align-self: flex-end;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
+
+.actual a {
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #a7d2db;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 33px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  padding-right: 10px;
+
+}
+
+/* боковая панелька aside */
+.aside {
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 193px;
+}
+
+.aside div {
+  width: 193px;
+  height: 66px;
+  background-color: #1c1c1c;
+  color: #fefefe;
+  font-size: 20px;
+  transform: rotate(270deg);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 60px;
+  z-index: 10;
+  position: relative;
+  margin-right: -63px;
+  right: 0;
+}
+
+.aside div:hover {
+  transform: rotate(0deg);
+  margin-right: 0px;
+  height: 193px;
+  border-radius: 4px;
+  background-color: lightgrey;
+  color: #1c1c1c;
+  border: 1px solid black;
+
+}
+
+.asideHide {
+  visibility: hidden;
+  color: #fefefe;
+  width: 193px;
+  height: 1px;
+}
+
+.asideHide label {
+  width: 150px;
+  height: 40px;
+}
+
+.aside:hover .asideHide {
+  visibility: visible;
+  height: 50px;
+  border: none;
+}
+
+/* описание  section*/
+.sectionNews {
+  font-family: 'PF DinDisplay Pro light';
+  color: #555555;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.description {
+  background-color: #a7d2db;
+  /* width: 1920px; */
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description1 {
+  margin-bottom: 16px;
+  font-family: 'PF DinDisplay Pro light';
+  color: #555555;
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 36px;
+  text-align: left;
+  height: 130px;
+  margin-left: 33px;
+  display: flex;
+  justify-content: center;
+}
+
+.descriptionH3 span {
+  font-weight: 700;
+  font-family: 'PFDinDisplayPro-Bold';
+}
+
+.rotationNumberLine {
+  width: 28px;
+  height: 63px;
+  border-right: 1px solid #fefefe;
+  margin-top: 10px;
+}
+
+.rotationNumber {
+  margin-right: 14px;
+  padding-top: 8px;
+}
+
+/* таблица рейсов main */
+main {
+  background-image: url("assets/mainBg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 83px;
+}
+
+.labelTable {
+  font-family: 'PF DinDisplay Pro light';
+  color: #555555;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 48px;
+  letter-spacing: 19px;
+  padding-bottom: 23px;
+  text-align: center;
+}
+
+.verticalLine {
+  background-color: rgba(85, 85, 85, 0.7);
+  width: 1px;
+  height: 30px;
+}
+
+.nameTable {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #555555;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+}
+
+#arrow {
+  margin-bottom: 120px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1215px;
+  margin-bottom: 100px;
+
+}
+
+th {
+  border-bottom: 1px solid rgba(85, 85, 85, 0.2);
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #555555;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+td,
+th {
+  border-right: 1px solid rgba(85, 85, 85, 0.2);
+  height: 60px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+tr th:last-child,
+tr td:last-child {
+  border-right: none;
+}
+
+td a:hover {
+  color: #a7d2db;
+  text-decoration: underline;
+}
+
+tr:hover td,
+tr:hover a {
+  color: #a7d2db;
+  text-decoration: underline;
+}
+
+td,
+td a {
+  font-family: 'PF DinDisplay Pro reg';
+  text-decoration: none;
+  color: #555555;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* ссылка на "показать еще" */
+.addFlight a {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 35);
+  box-sizing: border-box;
+  background-color: #c4e5ec;
+  width: 181px;
+  height: 54px;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.addFlight img {
+  padding-left: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.footerName {
+  width: 623px;
+  font-family: 'PF DinDisplay Pro light';
+  /* color:  rgba(70, 70, 70, 0.44); */
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 80px;
+  letter-spacing: 19px;
+  margin-bottom: 24px;
+}
+
+.allContacts,
+.design {
+  display: flex;
+}
+
+.allContacts {
+  width: 80%;
+  justify-content: space-around;
+
+}
+
+.allContacts img {
+  padding-right: 15px;
+}
+
+.allContacts div {
+  font-family: 'PF DinDisplay Pro light';
+  color: #464646;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 48px;
+}
+
+.allContacts p,
+.faxContact p {
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #7e7e7e;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.footerDown {
+  height: 35%;
+}
+
+.design {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.design img {
+  background-color: #555555;
+}
+
+/* pop-up */
+#modal_form {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.pop {
+  font-family: 'PFDinDisplayPro-Bold';
+  color: #555555;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#goal {
+  color: #a7d2db;
+  text-decoration: underline;
+  font-family: 'PF DinDisplay Pro reg';
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+#btn {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 35);
+  box-sizing: border-box;
+  background-color: #c4e5ec;
+  width: 181px;
+  height: 54px;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-left: 60px
+}
